@@ -175,14 +175,14 @@ header {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .feature-item {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: 3.2rem;
 }
 
 .feature-icon {
@@ -194,7 +194,7 @@ header {
 
 .secondary-heading {
   font-size: 2.4rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 4rem;
 }
 
 .course {
@@ -203,6 +203,9 @@ header {
   width: 100%;
   /* column-gap: 12.8rem; */
   row-gap: 4.8rem;
+  box-shadow: 0.2rem 1.2rem 30rem rgba(47, 46, 65, 15%);
+  padding: 2.4rem;
+  border-radius: 11px;
 }
 
 .course-container {
@@ -244,6 +247,6 @@ header {
 }
 
 .course-link:hover {
-  transform: translateY(-15px);
+  transform: translateY(-10px);
   color: var(--main-color);
 }
