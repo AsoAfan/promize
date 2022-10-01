@@ -54,6 +54,14 @@ strong {
   top: -135% !important;
 }
 
+.top--c {
+  top: -90% !important;
+}
+
+.top--c-sharp {
+  top: -155% !important;
+}
+
 /* End Global */
 
 /* Start Header */
@@ -296,6 +304,7 @@ header {
 
 .detail p {
   cursor: text;
+  text-transform: capitalize;
 }
 
 .course-link:hover .detail {
