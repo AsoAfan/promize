@@ -357,3 +357,9 @@ header {
   border-radius: 50%;
   color: #cc474c;
 }
+
+.p-link {
+  /* color: inherit; */
+  text-decoration: underline;
+  cursor: pointer;
+}
