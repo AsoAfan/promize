@@ -101,6 +101,7 @@ strong {
 
 header {
   background-color: var(--main-color);
+  width: 100%;
 }
 
 .navigation {
@@ -414,4 +415,25 @@ header {
 
 .p-link:hover {
   border-bottom: 1px solid transparent;
+}
+
+.book-store {
+  background-color: #2f2e41;
+  padding: 4.8rem;
+  color: #e9ecef;
+}
+
+.book-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 8.6rem;
+}
+
+.book-title {
+  color: inherit;
+}
+
+.book-img img {
+  width: 100%;
 }
