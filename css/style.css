@@ -26,6 +26,7 @@ body {
   font-family: Rubik;
   color: var(--font-color);
   background-color: #e9ecef;
+  padding-bottom: 8.4rem;
 }
 
 .container {
@@ -47,28 +48,52 @@ strong {
 }
 
 .top--java {
-  top: -100% !important;
+  top: -118% !important;
 }
 
-.top--python {
-  top: -135% !important;
+.top--php-c-sharp {
+  top: -159% !important;
 }
 
-.top--c {
-  top: -90% !important;
+.top--sql-c-python {
+  top: -138% !important;
 }
 
-.top--c-sharp {
-  top: -155% !important;
+.top--web-c {
+  top: -95% !important;
 }
 
-.top--php {
-  top: -148% !important;
+.top--kotlin {
+  top: -75% !important;
 }
 
-.top--sql {
-  top: -128% !important;
+.top--swift {
+  top: -55% !important;
 }
+
+.bottom {
+  top: 110% !important;
+}
+
+/* .bottom-php {
+  bottom: -160%;
+}
+
+.bottom-sql {
+  bottom: -140%;
+}
+
+.bottom-web {
+  bottom: -95%;
+}
+
+.bottom-kotlin {
+  bottom: -75%;
+}
+
+.bottom-swift {
+  bottom: -55%;
+} */
 
 /* End Global */
 
@@ -238,7 +263,7 @@ header {
   border-radius: 11px;
 }
 
-.course-container {
+.course-info {
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
@@ -278,8 +303,19 @@ header {
   position: relative;
 }
 
-.course-link:hover {
+.course-container {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s;
+  border-radius: 9px;
+  position: relative;
+}
+
+.course-container:hover {
   transform: translateY(-10px);
+}
+
+.course-container:hover .course-link {
   color: var(--main-color);
 }
 
@@ -316,7 +352,7 @@ header {
   text-transform: capitalize;
 }
 
-.course-link:hover .detail {
+.course-container:hover .detail {
   color: #333;
   opacity: 1;
   visibility: visible;
@@ -368,11 +404,14 @@ header {
 }
 
 .p-link {
-  /* color: inherit; */
-  text-decoration: underline;
+  color: inherit;
+  text-decoration: none;
   cursor: pointer;
-  display: block;
+  border-bottom: 1px solid currentColor;
+  padding: 0.2rem;
+  transition: 0.3s;
 }
 
-/* used for communicate with databases and it's the standard
-                language for relational database management systems */
+.p-link:hover {
+  border-bottom: 1px solid transparent;
+}
