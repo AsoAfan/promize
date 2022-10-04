@@ -26,7 +26,11 @@ body {
   font-family: Rubik;
   color: var(--font-color);
   background-color: #e9ecef;
-  padding-bottom: 8.4rem;
+  /* padding-bottom: 8.4rem; */
+}
+
+address {
+  font-style: normal;
 }
 
 .container {
@@ -43,8 +47,29 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.top {
+  font-size: 3rem;
+  position: sticky;
+  bottom: 115vh;
+  right: 2.4rem;
+  background: #000;
+  color: purple;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 strong {
   font-weight: 500;
+}
+
+input {
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: #2f2e416b;
 }
 
 .top--java {
@@ -203,6 +228,12 @@ header {
 .sb {
   color: rgba(26, 26, 26, 0.7);
   box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.6);
+}
+
+.sb:hover {
+  background-color: rgba(26, 26, 26, 0.6);
+  box-shadow: none;
+  color: #e9ecef;
 }
 
 /* End Header */
@@ -373,6 +404,7 @@ header {
   width: 100%;
   height: auto;
   border-radius: 11px;
+  box-shadow: 1.2rem 2.4rem 5rem rgba(47, 46, 65, 0.12);
 }
 
 .properties-list {
@@ -419,7 +451,7 @@ header {
 
 .book-store {
   background-color: #2f2e41;
-  padding: 4.8rem;
+  padding: 9.6rem 4.8rem;
   color: #e9ecef;
 }
 
@@ -436,4 +468,91 @@ header {
 
 .book-img img {
   width: 100%;
+}
+
+.pb.book-view {
+  background-color: #55769f;
+  margin-right: 0;
+  margin-left: 1.6rem;
+}
+
+.pb.book-view:hover {
+  background-color: #445e7f;
+}
+
+#email {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  border-radius: 9px;
+}
+
+.footer {
+  padding: 9.6rem 0;
+  background-color: #2f2e41;
+  border-top: 1px solid #eee;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 6.4rem;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.icons {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: auto;
+}
+
+.footer-logo {
+  margin-bottom: 3.2rem;
+}
+
+.social-icon {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.copy {
+  font-size: 1.4rem;
+  color: #f6f6f6;
+  width: 85%;
+}
+
+.footer-list,
+address {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+address p:first-child {
+  width: 80%;
+  line-height: 1.5;
+}
+
+.footer-header {
+  font-weight: 500;
+  color: #f5dadb;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.footer-link {
+  font-size: 1.6rem;
+  color: #f6f6f6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #eeb868;
 }

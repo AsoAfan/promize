@@ -24,8 +24,8 @@
         <nav class="nav">
           <ul class="nav-list">
             <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">Courses</a></li>
-            <li><a href="#" class="nav-link">Books</a></li>
+            <li><a href="#courses" class="nav-link">Courses</a></li>
+            <li><a href="#books" class="nav-link">Books</a></li>
             <li><a href="#" class="nav-link">About</a></li>
             <li><a href="#" class="nav-link">Contact</a></li>
           </ul>
@@ -38,6 +38,8 @@
           ></ion-icon>
         </div>
       </div>
+
+      <!-- <a href="#top" class="top">&uarr;</a> -->
     </header>
 
     <main>
@@ -50,8 +52,8 @@
               for a successful journey just signup
             </p>
 
-            <a href="#" class="pb">Sign up now</a>
-            <a href="#" class="sb">Learn more</a>
+            <a href="#" class="pb">Start now</a>
+            <a href="#vedio" class="sb">Learn more</a>
           </div>
 
           <figure class="image-box">
@@ -72,6 +74,7 @@
             class="video"
             controls
             poster="Img/How To Be A Good.png"
+            id="vedio"
           ></video>
 
           <ul class="properties-list">
@@ -142,7 +145,7 @@
             </li>
           </ul>
         </div>
-        <div class="course">
+        <div class="course" id="courses">
           <!-- 1  Java -->
 
           <div class="course-container">
@@ -344,7 +347,7 @@
               </div>
             </a>
 
-            <div class="detail top--kotlin">
+            <div class="detail bottom">
               <p class="more">used for Android developing</p>
             </div>
           </div>
@@ -363,22 +366,31 @@
               </div>
             </a>
 
-            <div class="detail top--swift">
+            <div class="detail bottom">
               <p class="more">used for IOS developing</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="book-store">
+      <section class="book-store" id="books">
         <div class="container">
           <div class="book-head">
             <div class="text-box">
               <h1 class="primary-heading book-title">All in-one bookshelf</h1>
-              <p class="hero-text">
+              <p class="hero-text nowrap">
                 Most popular programming books collected and are showed here for
                 free
               </p>
+              <form action="mailto:aso.sargaty@yahoo.com">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="John@example.com"
+                />
+                <a href="#" class="pb book-view">Get Books</a>
+              </form>
             </div>
             <div class="book-img">
               <img src="Img/8609147_5836.png" alt="" />
@@ -387,6 +399,74 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="logo-col">
+          <a href="#">
+            <img src="Img/logo.png" alt="" class="logo footer-logo" />
+          </a>
+
+          <ul class="icons">
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon name="logo-facebook" class="social-icon"></ion-icon
+              ></a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon name="logo-instagram" class="social-icon"></ion-icon
+              ></a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copy">
+            Copyright &copy; 2027 by Promize, inc. All rights reserved
+          </p>
+        </div>
+        <div class="contact-col">
+          <p class="footer-header">Contact us</p>
+          <address>
+            <p class="footer-link">Kaneskan st., 2nd floor, Kurdistan - Iraq</p>
+            <a href="tel:+9647511520631" class="footer-link">751-152-0631</a>
+            <a href="mailto:aso.sargaty@yahoo.com" class="footer-link"
+              >Promize@learning.com</a
+            >
+          </address>
+        </div>
+        <div class="course-col">
+          <p class="footer-header">Courses</p>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">HTML</a></li>
+            <li><a href="#" class="footer-link">CSS</a></li>
+            <li><a href="#" class="footer-link">JavaScript</a></li>
+            <li><a href="#" class="footer-link">Java</a></li>
+            <li><a href="#" class="footer-link">Python</a></li>
+            <li><a href="#" class="footer-link">C</a></li>
+            <li><a href="#" class="footer-link">C++</a></li>
+            <li><a href="#" class="footer-link">C#</a></li>
+          </ul>
+        </div>
+
+        <div class="about-col">
+          <p class="footer-header">About</p>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">About Promize</a></li>
+            <li><a href="#" class="footer-link">For instructors</a></li>
+            <li><a href="#" class="footer-link">Content resources</a></li>
+            <li><a href="#" class="footer-link">Help center</a></li>
+            <li><a href="#" class="footer-link">Send feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script
       type="module"
