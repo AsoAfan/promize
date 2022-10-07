@@ -242,7 +242,7 @@ header {
 
 .platform-features {
   padding: 8.6rem 0;
-  align-items: start;
+  /* align-items: start; */
   grid-template-columns: 1fr 3fr;
 }
 
@@ -312,9 +312,9 @@ header {
   background-position: center; */
 }
 
-.sql {
+/* .sql {
   width: 7.2rem;
-}
+} */
 
 .img img {
   width: 7.2rem;

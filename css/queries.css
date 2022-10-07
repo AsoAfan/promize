@@ -1,0 +1,75 @@
+@media (max-width: 85em) {
+  .container {
+    width: 120rem;
+  }
+
+  .primary-heading {
+    font-size: 4.4rem;
+  }
+
+  header {
+    background-color: blueviolet;
+  }
+
+  .video-container {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .property span {
+    font-size: 1.6rem;
+  }
+  .platform-features {
+    column-gap: 1.6rem;
+  }
+
+  .treasury-heading {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .features {
+    padding: 3.2rem 3.2rem 3.2rem 3.2rem;
+  }
+}
+@media (max-width: 79em) {
+  .container {
+    width: 115rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+
+  header {
+    background-color: cyan;
+  }
+
+  .property span {
+    font-size: 1.4rem;
+  }
+
+  .property-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    /* background-color: #932f0b; */
+    padding: 0.8rem;
+    border-radius: 50%;
+    color: #cc474c;
+}
+
+@media (max-width: 70em) {
+  .container {
+    width: 110rem;
+  }
+
+  header {
+    background-color: black;
+  }
+
+  .video-container {
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .property span {
+    font-size: 1.4rem;
+  }
+}
