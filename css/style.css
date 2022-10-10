@@ -303,7 +303,7 @@ header {
 }
 
 .img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 7.2rem;
   height: 7.2rem;
   /* overflow: hidden; */
@@ -317,7 +317,7 @@ header {
 } */
 
 .img img {
-  width: 7.2rem;
+  width: 100%;
   /* filter: invert(13%) sepia(6%) saturate(3403%) hue-rotate(204deg)
     brightness(96%) contrast(85%); */
 }
