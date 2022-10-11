@@ -69,11 +69,9 @@ address {
 }
 
 .grid {
-  display: grid;
 }
 
 .grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
 }
 
 /* .top {
@@ -128,26 +126,6 @@ input::placeholder {
 .bottom {
   top: 110% !important;
 }
-
-/* .bottom-php {
-  bottom: -160%;
-}
-
-.bottom-sql {
-  bottom: -140%;
-}
-
-.bottom-web {
-  bottom: -95%;
-}
-
-.bottom-kotlin {
-  bottom: -75%;
-}
-
-.bottom-swift {
-  bottom: -55%;
-} */
 
 /* End Global */
 
@@ -270,6 +248,7 @@ header {
 /* Start Header */
 
 .platform-features {
+  display: grid;
   padding: 8.6rem 0;
   align-items: stretch;
   grid-template-columns: 1fr 3fr;

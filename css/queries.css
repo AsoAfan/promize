@@ -135,6 +135,34 @@
 }
 
 @media (max-width: 59em) {
+  .top--java {
+    top: unset !important;
+  }
+
+  .top--php-c-sharp {
+    top: unset !important;
+  }
+
+  .top--sql-c-python {
+    top: unset !important;
+  }
+
+  .top--web-c {
+    top: unset !important;
+  }
+
+  .top--kotlin {
+    top: unset !important;
+  }
+
+  .top--swift {
+    top: unset !important;
+  }
+
+  .bottom {
+    top: unset !important;
+  }
+
   header {
     background-color: darkblue;
   }
@@ -177,6 +205,68 @@
   .properties-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .platform-features {
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: center;
+  }
+
+  .treasury-heading {
+    text-align: center;
+  }
+
+  .feature-card {
+    flex-direction: row;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .course {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .course-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    position: initial;
+    text-align: center;
+  }
+
+  .course-container:hover {
+    transform: translateY(0);
+  }
+
+  .course-container:hover .course-link {
+    color: var(--main-color);
+  }
+
+  .detail {
+    position: relative;
+    top: unset;
+    left: unset;
+    box-shadow: 0 0 2rem rgb(0 0 0 / 0);
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+  }
+
+  .book-head {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .book-img img {
+    display: none;
   }
 }
 
