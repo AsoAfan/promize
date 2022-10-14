@@ -13,16 +13,63 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
   </head>
-  <body>
+  <body class="open-nav">
+    <!-- <nav class="nav mob-nav">
+      <div class="profile-info">
+        <ion-icon
+          name="person-circle-outline"
+          class="profile-icon mob-profile-icon"
+        ></ion-icon>
+        
+      </div>
+
+      <ul class="nav-list mob-nav-list">
+        <li>
+          <a href="a.html" target="_blank" class="nav-link mob-nav-link"
+            ><ion-icon name="home-outline"></ion-icon> <span>Home</span></a
+          >
+        </li>
+        <li>
+          <a href="#courses" class="nav-link mob-nav-link"
+            ><ion-icon name="school-outline"></ion-icon> <span>Courses</span></a
+          >
+        </li>
+        <li>
+          <a href="#books" class="nav-link mob-nav-link"
+            ><ion-icon name="book-outline"></ion-icon><span>Books</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-link mob-nav-link"
+            ><ion-icon name="information-outline"></ion-icon
+            ><span>About</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-link mob-nav-link"
+            ><ion-icon name="call-outline"></ion-icon><span>Contact</span></a
+          >
+        </li>
+      </ul>
+    </nav> -->
+
     <header>
-      <div class="navigation container">
-        <div>
+      <div class="navigation container nav-open">
+        <div class="">
           <a href="#">
             <img src="Img/logo.png" alt="" class="logo" />
           </a>
         </div>
 
         <nav class="nav">
+          <div>
+            <ion-icon
+              name="person-circle-outline"
+              class="profile-icon"
+            ></ion-icon>
+            <span class="profile-name">Profile name</span>
+          </div>
+
           <ul class="nav-list">
             <li><a href="a.html" target="_blank" class="nav-link">Home</a></li>
             <li><a href="#courses" class="nav-link">Courses</a></li>
@@ -36,6 +83,14 @@
           <ion-icon
             name="person-circle-outline"
             class="profile-icon"
+          ></ion-icon>
+          <ion-icon
+            name="menu-outline"
+            class="profile-icon nav-icons"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            class="profile-icon nav-icons"
           ></ion-icon>
         </div>
       </div>
@@ -126,7 +181,7 @@
       </section>
 
       <section class="platform-features container">
-        <div class="features">
+        <div class="features" draggable="true">
           <h2 class="treasury-heading">Platform features</h2>
           <ul class="feature-card">
             <li class="feature-item" aria-label="More than 25 Languages">
@@ -165,8 +220,8 @@
 
             <div class="detail top--java">
               <p class="more">
-                Using for mobile/desktop applications, networking and back-end
-                web development
+                mobile/desktop applications, networking and back-end web
+                development
               </p>
             </div>
             <!--  -->
@@ -188,8 +243,7 @@
 
             <div class="detail top--sql-c-python">
               <p class="more">
-                Using for mobile/desktop applications, networking, hacking,
-                cyber security and back-end web development
+                Used for mobile/desktop applications, networking, hacking and
               </p>
             </div>
           </div>
@@ -233,7 +287,7 @@
             <div class="detail top--sql-c-python">
               <p class="more">
                 Using for mobile/desktop applications, games, operating systems,
-                networking and data structure
+                networking
               </p>
             </div>
           </div>
@@ -254,8 +308,8 @@
 
             <div class="detail top--php-c-sharp">
               <p class="more">
-                Using for mobile/desktop applications, games, operating systems,
-                networking, cloud-based services and back-end web development
+                mobile/desktop applications, games, operating systems,
+                networking, cloud-based services
               </p>
             </div>
           </div>
@@ -277,7 +331,7 @@
             <div class="detail bottom">
               <p class="more">
                 is server-side scripting language that used for back-end web
-                development, and may some web devs use for GUI
+                development
               </p>
             </div>
           </div>
@@ -298,7 +352,8 @@
 
             <div class="detail bottom">
               <p class="more">
-                used for communicate with databases and it's the standard
+                used for communicate with databases
+                <!-- and it's the standard
                 language for
                 <a
                   href="https://en.wikipedia.org/wiki/Relational_database"
@@ -306,7 +361,7 @@
                   target="_blank"
                 >
                   relational database management systems</a
-                >
+                > -->
               </p>
             </div>
           </div>

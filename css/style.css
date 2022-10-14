@@ -143,10 +143,37 @@ header {
   position: relative;
 }
 
+.logo-container {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
 .logo {
   height: 4.8rem;
   width: auto;
   display: inline-block;
+}
+
+.nav-icons {
+  color: #2f2e41;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: 2.4rem;
+  z-index: 200;
+  display: none;
+}
+
+.nav-icons[name="close-outline"] {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+.mobile-logo {
+  display: none;
 }
 
 .nav-list {

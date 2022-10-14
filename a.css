@@ -1,3 +1,14 @@
+body {
+  position: relative;
+  height: 250vh;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 .course {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
