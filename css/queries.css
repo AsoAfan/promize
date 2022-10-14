@@ -42,9 +42,6 @@
   }
 }
 @media (max-width: 79em) {
-  .container {
-    /* width: 115rem; */
-  }
   html {
     font-size: 56.25%;
   }
@@ -96,10 +93,6 @@
     /* column-gap: 0rem; */
   }
 
-  .property {
-    /* gap: 0.4rem; */
-  }
-
   .property span {
     font-size: 1.6rem;
   }
@@ -119,10 +112,6 @@
 
   .course-name {
     font-size: 1.4rem;
-  }
-
-  .video {
-    /* width: 120%; */
   }
 
   .book-store {
@@ -179,10 +168,6 @@
     font-size: 50%;
   }
 
-  header .nav {
-    /* display: none; */
-  }
-
   .nav {
     opacity: 0;
     visibility: hidden;
@@ -218,6 +203,13 @@
   .open-nav .nav .profile-icon {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
+  }
+
+  .open-nav .profile-icon-mob {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .profile-name {
@@ -245,9 +237,8 @@
     display: block;
   }
 
-  .profile-icon[name="person-circle-outline"] {
-    opacity: 0;
-    visibility: hidden;
+  .org .profile-icon[name="person-circle-outline"] {
+    display: none;
   }
   .open-nav .profile-icon.profile-icon[name="menu-outline"] {
     display: none;
@@ -255,6 +246,10 @@
 
   .open-nav .profile-icon.profile-icon[name="close-outline"] {
     display: block;
+  }
+  .profile-icon-mob {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .hero-section {
