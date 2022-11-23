@@ -1,0 +1,152 @@
+.signup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+  background-color: #fff;
+  padding: 4.8rem 9.6rem;
+  padding-bottom: 2.4rem;
+  padding-left: 2.4rem;
+  border-radius: 11px;
+  width: 120rem;
+  z-index: 20;
+
+  transition: all 0.4s;
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.close-signup-form {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  font-size: 2.4rem;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  cursor: pointer;
+}
+
+.form-header {
+  margin-bottom: 3.2rem;
+  font-size: 2.4rem;
+  color: #2f2e41;
+}
+
+.with {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.8rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #cc474c;
+}
+
+.with::before {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #cc474c;
+  display: inline-block;
+  margin-right: 7px;
+  border-radius: 40px;
+}
+
+.other {
+  margin-bottom: 4.8rem;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.other-signup {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #333;
+  padding: 1.2rem 2.4rem;
+  box-shadow: 0 0 0 1px rgba(26, 26, 26, 0.3);
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.other-signup:hover,
+.other-signup:active {
+  box-shadow: 0 0 0 2px rgba(204, 71, 76, 0.302);
+}
+
+.google-icon {
+  width: 2.4rem;
+  height: auto;
+}
+
+.immg img {
+  width: 100%;
+  text-align: left;
+}
+
+.input-row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  font-size: 1.6rem;
+}
+
+label::after {
+  content: "*";
+  color: #cc474c;
+}
+
+.birthday-label::after {
+  content: "";
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.signup-input {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.8rem;
+  border: 1px solid rgba(26, 26, 26, 0.3);
+  border-radius: 9px;
+}
+
+.signup-input:focus {
+  outline: none;
+  box-shadow: 0 0 8px 2px rgba(205, 71, 75, 0.278);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 8.6rem;
+  /* padding: 4.8rem 9.6rem; */
+  padding-bottom: 4.8rem;
+}
+
+.signup-btns {
+  text-align: right;
+}
+
+.signup-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

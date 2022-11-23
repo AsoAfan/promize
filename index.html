@@ -11,48 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/additional.css" />
+    <!-- <link rel="stylesheet" href="css/queries.css" /> -->
   </head>
   <body>
-    <!-- <nav class="nav mob-nav">
-      <div class="profile-info">
-        <ion-icon
-          name="person-circle-outline"
-          class="profile-icon mob-profile-icon"
-        ></ion-icon>
-        
-      </div>
-
-      <ul class="nav-list mob-nav-list">
-        <li>
-          <a href="a.html" target="_blank" class="nav-link mob-nav-link"
-            ><ion-icon name="home-outline"></ion-icon> <span>Home</span></a
-          >
-        </li>
-        <li>
-          <a href="#courses" class="nav-link mob-nav-link"
-            ><ion-icon name="school-outline"></ion-icon> <span>Courses</span></a
-          >
-        </li>
-        <li>
-          <a href="#books" class="nav-link mob-nav-link"
-            ><ion-icon name="book-outline"></ion-icon><span>Books</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="nav-link mob-nav-link"
-            ><ion-icon name="information-outline"></ion-icon
-            ><span>About</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="nav-link mob-nav-link"
-            ><ion-icon name="call-outline"></ion-icon><span>Contact</span></a
-          >
-        </li>
-      </ul>
-    </nav> -->
-
+    <div class="overlay hidden"></div>
     <header>
       <div class="navigation container">
         <div class="">
@@ -62,14 +26,6 @@
         </div>
 
         <nav class="nav">
-          <div class="mob">
-            <ion-icon
-              name="person-circle-outline"
-              class="profile-icon-mob profile-icon"
-            ></ion-icon>
-            <span class="profile-name">Profile name</span>
-          </div>
-
           <ul class="nav-list">
             <li><a href="a.html" target="_blank" class="nav-link">Home</a></li>
             <li><a href="#courses" class="nav-link">Courses</a></li>
@@ -77,26 +33,84 @@
             <li><a href="#" class="nav-link">About</a></li>
             <li><a href="#" class="nav-link">Contact</a></li>
           </ul>
+          <ion-icon
+            name="search-outline"
+            class="profile-icon-mob profile-icon"
+          ></ion-icon>
         </nav>
-
-        <div class="org">
-          <ion-icon
-            name="person-circle-outline"
-            class="profile-icon"
-          ></ion-icon>
-          <ion-icon
-            name="menu-outline"
-            class="profile-icon nav-icons"
-          ></ion-icon>
-          <ion-icon
-            name="close-outline"
-            class="profile-icon nav-icons"
-          ></ion-icon>
-        </div>
       </div>
-
-      <!-- <a href="#top" class="top">&uarr;</a> -->
     </header>
+
+    <div class="signup hidden">
+      <span class="close-signup-form">x</span>
+      <!-- <div class="close-btn"></div> -->
+      <div class="immg">
+        <img src="Img/undraw_welcoming_re_x0qo.svg" alt="" />
+      </div>
+      <form>
+        <h1 class="form-header">Sign up</h1>
+        <div>
+          <div class="with">Sign up with</div>
+          <div class="other">
+            <a href="#" class="other-signup">
+              <img
+                class="google-icon"
+                src="Img/7123025_logo_google_g_icon.png"
+                alt=""
+              />
+              <span>Sign up with Google</span>
+            </a>
+
+            <a href="#" class="other-signup">
+              <!-- <ion-icon name="logo-facebook"></ion-icon> -->
+              <img
+                class="google-icon"
+                src="Img/Facebook-logo-blue-circle-large-white-f.png"
+                alt=""
+              />
+              <span>Sign up with Facebook</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="inputs">
+          <div class="input-row1">
+            <div class="input">
+              <label>Email</label>
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="signup-input"
+                required
+              />
+            </div>
+
+            <div class="input">
+              <label>Password</label>
+              <input
+                type="password"
+                placeholder="Password"
+                class="signup-input"
+                required
+              />
+            </div>
+          </div>
+          <div class="input">
+            <label class="birthday-label" title="hello">Birthday</label>
+            <input
+              type="date"
+              title="Enter your birthday"
+              class="signup-input"
+            />
+          </div>
+        </div>
+        <div class="signup-btns">
+          <!-- <a href="#" class="pb signup-btn">Sign up</a> -->
+          <button type="submit" class="pb signup-btn">Sign up</button>
+          <button type="button" class="sb signup-btn cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
 
     <main>
       <section class="hero-section">
@@ -105,10 +119,10 @@
             <h1 class="primary-heading">Start your programming journey now</h1>
             <p class="hero-text">
               Programming is the best science today, that everyone must learn,
-              for a successful journey just signup
+              for a successful journey just start now
             </p>
 
-            <a href="#" class="pb">Start now</a>
+            <a href="#" class="pb start-btn">Start now</a>
             <a href="#vedio" class="sb">Learn more</a>
           </div>
 
@@ -224,7 +238,6 @@
                 development
               </p>
             </div>
-            <!--  -->
           </div>
 
           <div class="course-container">
@@ -352,16 +365,16 @@
 
             <div class="detail bottom">
               <p class="more">
-                used for communicate with databases
-                <!-- and it's the standard
+                used for communicate with databases and it's the standard
                 language for
                 <a
+                  rel="noopener"
                   href="https://en.wikipedia.org/wiki/Relational_database"
                   class="p-link"
                   target="_blank"
                 >
                   relational database management systems</a
-                > -->
+                >
               </p>
             </div>
           </div>
@@ -425,8 +438,7 @@
               <p class="more">used for IOS app development</p>
             </div>
           </div>
-          <!-- 
-        --></div>
+        </div>
       </section>
 
       <section class="book-store" id="books">
@@ -524,6 +536,7 @@
       </div>
     </footer>
 
+    <script src="js/script.js" defer></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

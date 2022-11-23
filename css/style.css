@@ -56,6 +56,7 @@ body {
   color: var(--font-color);
   background-color: var(--bg-color);
   /* padding-bottom: 8.4rem; */
+  position: relative;
 }
 
 address {
@@ -121,6 +122,11 @@ input::placeholder {
   top: 110% !important;
 }
 
+button {
+  border: none;
+  font-weight: 500;
+}
+
 /* End Global */
 
 /* Start Header */
@@ -149,12 +155,12 @@ header {
   display: inline-block;
 }
 
-.mob {
-  /* display: none; */
+/* .mob {
+  /* display: none; */ /*
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
 .nav-icons {
   color: #2f2e41;
@@ -170,11 +176,21 @@ header {
 }
 
 .overlay {
-  display: none;
-}
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  transition: all 0.3s ease-out;
+  width: 100%;
+  height: 100%;
+  background-color: #2f2e4155;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 19;
+  transition: all 0.4s;
 
-.mobile-logo {
-  display: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav-list {
