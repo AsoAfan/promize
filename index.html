@@ -47,7 +47,7 @@
       <div class="immg">
         <img src="Img/undraw_welcoming_re_x0qo.svg" alt="" />
       </div>
-      <form>
+      <form class="sign">
         <h1 class="form-header">Sign up</h1>
         <div>
           <div class="with">Sign up with</div>
@@ -106,7 +106,73 @@
         </div>
         <div class="signup-btns">
           <!-- <a href="#" class="pb signup-btn">Sign up</a> -->
-          <button type="submit" class="pb signup-btn">Sign up</button>
+          <button type="button" class="pb signup-btn">Sign up</button>
+          <button type="button" class="pb signup-btn login">Login</button>
+          <button type="button" class="sb signup-btn cancel">Cancel</button>
+        </div>
+      </form>
+
+      <form class="log hidden">
+        <h1 class="form-header">Log in</h1>
+        <div>
+          <div class="with">Log in with</div>
+          <div class="other">
+            <a href="#" class="other-signup">
+              <img
+                class="google-icon"
+                src="Img/7123025_logo_google_g_icon.png"
+                alt=""
+              />
+              <span>Log in with Google</span>
+            </a>
+
+            <a href="#" class="other-signup">
+              <!-- <ion-icon name="logo-facebook"></ion-icon> -->
+              <img
+                class="google-icon"
+                src="Img/Facebook-logo-blue-circle-large-white-f.png"
+                alt=""
+              />
+              <span>Log in with Facebook</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="inputs">
+          <div class="input-row1">
+            <div class="input">
+              <label>Email</label>
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="signup-input"
+                required
+              />
+            </div>
+
+            <div class="input">
+              <label>Password</label>
+              <input
+                type="password"
+                placeholder="Password"
+                class="signup-input"
+                required
+              />
+            </div>
+          </div>
+          <!-- <div class="input">
+            <label class="birthday-label" title="hello">Birthday</label>
+            <input
+              type="date"
+              title="Enter your birthday"
+              class="signup-input"
+            />
+          </div> -->
+        </div>
+        <div class="signup-btns">
+          <!-- <a href="#" class="pb signup-btn">Sign up</a> -->
+          <button type="button" class="pb signup-btn login">Login</button>
+          <button type="button" class="pb signup-btn sign-up">Sign up</button>
           <button type="button" class="sb signup-btn cancel">Cancel</button>
         </div>
       </form>

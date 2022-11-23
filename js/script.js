@@ -1,8 +1,7 @@
 const signupForm = document.querySelector(".signup");
 const closeSignupFrom = document.querySelector(".close-signup-form");
 const overlay = document.querySelector(".overlay");
-const cancelSignup = document.querySelector(".cancel");
-
+const cancelSignup = document.querySelectorAll(".cancel");
 console.log(closeSignupFrom);
 
 const openSignUpForm = document.querySelector(".start-btn");
@@ -17,9 +16,11 @@ const openForm = function () {
   overlay.classList.remove("hidden");
 };
 
-closeSignupFrom.addEventListener("click", closeFrom);
+for (let i = 0; i < cancelSignup.length; i++) {
+  console.log(cancelSignup);
+  cancelSignup[i].addEventListener("click", closeFrom);
+}
 overlay.addEventListener("click", closeFrom);
-cancelSignup.addEventListener("click", closeFrom);
 
 document.addEventListener("keydown", function (event) {
   console.log(event);
@@ -30,3 +31,19 @@ document.addEventListener("keydown", function (event) {
 });
 
 openSignUpForm.addEventListener("click", openForm);
+
+const loginForm = document.querySelector(".log");
+const switchBtn = document.querySelector(".login");
+const signForm = document.querySelector(".sign");
+const signBtn = document.querySelector(".sign-up");
+console.log(signBtn);
+
+switchBtn.addEventListener("click", function () {
+  signForm.classList.add("hidden");
+  loginForm.classList.remove("hidden");
+});
+
+signBtn.addEventListener("click", function () {
+  loginForm.classList.add("hidden");
+  signForm.classList.remove("hidden");
+});
